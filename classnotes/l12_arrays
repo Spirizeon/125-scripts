@@ -1,0 +1,38 @@
+// SLIDE-11
+#define SIZE 10 // constant
+
+// we can't use variables for size of arrays
+
+int size = 15;
+float sal[SIZE];  // valid
+float sal[size]; // invalid
+
+// SLIDE-13
+// Indexing and access is same as python
+// Index shall be an integer or expression of integers
+
+// arr[3], arr[2*j], arr[i++]
+
+// SLIDE-23
+// Initially array has GARBAGE values
+// Difference between static and global variables
+
+// SLIDE-25
+// If some elements are not initialised
+// they have default value 0
+
+// data_type array_name[array_size] = {value1,value2,...valueN};
+
+// SLIDE-33
+// Searching in a 1-D Array 
+// + Linear Search
+// + Binary Search
+
+// Bubble sort
+// + L-->R
+// + Compare two elements
+// + Push greater element to right
+// + Keep cycling until no swaps are needed
+
+// SLIDE-40
+// arr[i][j] is array_name[row_num][col_num]
