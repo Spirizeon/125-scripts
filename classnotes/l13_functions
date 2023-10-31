@@ -1,0 +1,34 @@
+// Functions
+// block of code that can be repeated
+// if only one function then it's main()
+
+// Functions can be stored in library
+
+// Two types:
+// + user-defined
+// + library function
+
+// Library functions (special)
+// Predefined by the compiler designer
+// Declared in the header files
+// body stored in .dll (dynamic link layer) files 
+
+// Three parts of user-def functions
+// + function definition 
+
+int funcname(){
+	printf("hi world")
+}
+
+// + function call
+funcname()
+
+// NOTE: No spaces in function name
+
+
+// data_type function_name(type1 arg1,type2 arg2,...,typeN argN){
+// 	function_body;
+// }
+
+
+// when no arguments, write func_name(void) #good practice
