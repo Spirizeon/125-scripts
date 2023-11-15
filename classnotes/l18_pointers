@@ -47,3 +47,13 @@ iptr++ //&iptr = 68 + 4 =72 (because bytes,not numbers)
 arr is &arr[0] (base name itself is a pointer)
 
 arr[3] = arr + 3 = memoryof(arr[0]) + (3*sizeof(int))
+
+Invalid operations:
+BODMAS between two pointers (may start from odd cell (taking some parts of one byte and some parts of another))
+multiplication of pointer with anything
+division of pointer with anything (may end up with floating numbers (in bytes?!?!?)) 
+addition of float, double or char values to pointer
+
+
+since (*)dereferencing operator is unary, it is on level 2 precendence order
+read from right to left
