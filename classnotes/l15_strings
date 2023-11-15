@@ -1,0 +1,37 @@
+%w.ns
+w memory spaces will be made
+n spaces will be considered
+%-w.ns
+means left-aligned
+
+scanf() without & will read the entire array
+considers <space> as a default delimiter
+
+solution: scanset
+%[A-Z,a-z] // these are allowed
+%[^@] // everything is allowed except @:w
+
+entire scanset syntax is regex
+
+two strings cannot be copied
+two strings cannot be compared
+
+enter <string.h>
+copy two strings => strcpy(s1,s2)
+join two strings => strcat(s1,s2)
+join two strings upto a particular characters => strcat(s1,s2,n)
+returns lenght without void character => strlen(s1)
+return 0/1 when comparing values of strings index by index
+nOTE: it stops when a value mismatch is encountered // 
+first length is checked
+returns difference (negative if first is smaller)
+
+strchr(s1,ch) is a character finder function (returns pointer to occurence)jjA
+
+the C preprocesssor
+---
+what is a macro
+(defined as open-ended function, no braces):wq
+":wq
+"
+

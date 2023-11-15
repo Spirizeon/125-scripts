@@ -1,0 +1,41 @@
+why pointers:
+code with pointers more efficient than code without
+ugly errors:
+error here, showing problem there (nightmarish)
+more on memory:
+[[Text(code)],
+[data],
+[BSS],
+[Stack],
+[Heap],
+[Shared]]
+
++ text/code tells how much is already compiled
++ data contains all initialised global variables (and initialised static)
++ BSS contains all non-initialised global variables (non-initialised static)
++ stack contains all local variables
++ heap contains dynamically allocated memory
++ shared will have the same memory cells shared among different programs
+
+Validity in addressof(&):
+&j // valid used with variable
+&arr[1] // valid used with array element
+&289 //invalid used with a constant
+&(10+11) //invalid used with an expression
+
+array is a sequence of addresses
+arr is same as &arr[0] (it points to the start of the array)
+(NOTE: only in strings)
+
+pointers:
+variables that store memory address
++ size of each pointer is 4 (each address is an integer)
++ has a name
++ "points" to a particulat location in memory
+`datatype *pointer_variable`;
+`datatype* pointer_variable`;
+
+
+*foo = &bar;
+foo = 69;
+pf(foo):$ 69;

@@ -1,0 +1,55 @@
+return (expression) needs to be in brackets for convention
+return 1 //not good
+return (1) // good
+
+too many values beyond number of parameters
+func(inta,int b, int c){
+	...
+}
+
+main(){
+	func(5,6,7,8);
+}
+
+the fourth argument is simply ignored
+
+main(){
+	func(5,6);
+}
+
+c receives a garbage value
+
+0 in return 0 for successful execution
+non-zero in return N for interruption
+
+the main() function is a hybrid function
++ function declared by the C compiler itself
++ function definition by the programmer
++ function call by the operating system 
+
+Library functions
+supplied with every C compiler
+source code of library function are not given to the user (they are in compiled form)
+they are stored in files called dll (dynamic linking library)
+the user gets only the object code
+
+Definition is precompiled and present in libarry
+declaration in header files (files with .h extension)
+function call by the programmer
+
+Static variable
+---
+in local variables, the memory is wiped off
+in global variables, the memory is visible to all functions
+
+Static variables keep it restricted to local scope
+and keep the memory intact until the end of the execution
+static statement is only viewed ONCE (VERY IMPORTANT)
+
+Const 
+---
+once it is mentioned, it cannot be changed.
+
+Global variables are automatically initialised to 0 at time of declaration (same case for static)
+
+but local variabless will have garbage values

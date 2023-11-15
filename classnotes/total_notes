@@ -1,0 +1,137 @@
+// SLIDE-11
+#define SIZE 10 // constant
+
+// we can't use variables for size of arrays
+
+int size = 15;
+float sal[SIZE];  // valid
+float sal[size]; // invalid
+
+// SLIDE-13
+// Indexing and access is same as python
+// Index shall be an integer or expression of integers
+
+// arr[3], arr[2*j], arr[i++]
+
+// SLIDE-23
+// Initially array has GARBAGE values
+// Difference between static and global variables
+
+// SLIDE-25
+// If some elements are not initialised
+// they have default value 0
+
+// data_type array_name[array_size] = {value1,value2,...valueN};
+
+// SLIDE-33
+// Searching in a 1-D Array 
+// + Linear Search
+// + Binary Search
+
+// Bubble sort
+// + L-->R
+// + Compare two elements
+// + Push greater element to right
+// + Keep cycling until no swaps are needed
+
+// SLIDE-40
+// arr[i][j] is array_name[row_num][col_num]
+// Functions
+// block of code that can be repeated
+// if only one function then it's main()
+
+// Functions can be stored in library
+
+// Two types:
+// + user-defined
+// + library function
+
+// Library functions (special)
+// Predefined by the compiler designer
+// Declared in the header files
+// body stored in .dll (dynamic link layer) files 
+
+// Three parts of user-def functions
+// + function definition 
+
+int funcname(){
+	printf("hi world")
+}
+
+// + function call
+funcname()
+
+// NOTE: No spaces in function name
+
+
+// data_type function_name(type1 arg1,type2 arg2,...,typeN argN){
+// 	function_body;
+// }
+
+
+// when no arguments, write func_name(void) #good practice
+return (expression) needs to be in brackets for convention
+return 1 //not good
+return (1) // good
+
+too many values beyond number of parameters
+func(inta,int b, int c){
+	...
+}
+
+main(){
+	func(5,6,7,8);
+}
+
+the fourth argument is simply ignored
+
+main(){
+	func(5,6);
+}
+
+c receives a garbage value
+
+0 in return 0 for successful execution
+non-zero in return N for interruption
+
+the main() function is a hybrid function
++ function declared by the C compiler itself
++ function definition by the programmer
++ function call by the operating system 
+
+Library functions
+supplied with every C compiler
+source code of library function are not given to the user (they are in compiled form)
+they are stored in files called dll (dynamic linking library)
+the user gets only the object code
+
+Definition is precompiled and present in libarry
+declaration in header files (files with .h extension)
+function call by the programmer
+
+Static variable
+---
+in local variables, the memory is wiped off
+in global variables, the memory is visible to all functions
+
+Static variables keep it restricted to local scope
+and keep the memory intact until the end of the execution
+static statement is only viewed ONCE (VERY IMPORTANT)
+
+Const 
+---
+once it is mentioned, it cannot be changed.
+
+Global variables are automatically initialised to 0 at time of declaration (same case for static)
+
+but local variabless will have garbage values
+%w.ns
+w memory spaces will be made
+n spaces will be considered
+%-w.ns
+means left-aligned
+
+scanf() without & will read the entire array
+considers <space> as a default delimiter
+
+solution: scanset
