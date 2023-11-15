@@ -1,0 +1,49 @@
+we explicitly typecast pointers:
+to tell compiler how much memory should be allocated @ memory
+unassigned pointer variable:
+contains garbage value
+'WILD' pointers
+
+
+segmentation fault:
+part of memory is for OS (kernel)
+part is for user
+
+if a pointer somehow points to the kernel (which is not allowed for user)
+wrongful access and crashes program. (segmentation fault)
+
+syntax
+---
+//declaring a vairable
+int age = 30;
+//declating a pointe rvariable
+int *iptr;
+//assigning address to pointer variable
+iptr = &age;
+
+
+NULL
+---
+int *iptr = NULL // not being assigned to anything, but still valid pointer
+
+copying a pointer to another pointer
+---
+iptr = &age
+int *what
+what = iptr (but only if base data type is same)
+
+*p1 is same as saying valueof(a)
+p1 is same as saying &a
+
+indirection opertor(*) known as "value at 'this place'"
+
+pointer arithmetic:
+char *iptr;
+char a;
+iptr = &a; //&iptr= 68
+
+iptr++ //&iptr = 68 + 4 =72 (because bytes,not numbers)
+
+arr is &arr[0] (base name itself is a pointer)
+
+arr[3] = arr + 3 = memoryof(arr[0]) + (3*sizeof(int))
