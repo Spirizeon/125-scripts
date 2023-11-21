@@ -1,11 +1,13 @@
 #include <stdio.h>
-int binr[100];
+int number,rev;
 int main(){
-  int argnum; //this is the input
-  scanf("%d",&argnum);
-  for(int i=0;argnum>=1;i++){
-    printf("%d",argnum%2);
-    argnum = argnum/2;
-  }
+    scanf("%d",&number);
+    while(number>0){
+        int l;
+        l = number%10;
+        rev=rev*10+l;
+        number/=10;
+    }
+    printf("%d",rev);
   return 0;
 }

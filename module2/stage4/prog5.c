@@ -1,13 +1,15 @@
 #include <stdio.h>
-int number,rev;
+
 int main(){
-    scanf("%d",&number);
-    while(number>0){
-        int l;
-        l = number%10;
-        rev=rev*10+l;
-        number/=10;
-    }
-    printf("%d",rev);
-  return 0;
+    int a=1,b=1,c,i,n,temp;
+    scanf("%d",&n);
+    printf("%d %d ",a,b);
+        for(i=3;i<=n;i++){
+            c = a+b;
+            printf("%d ",c);
+            temp = b; //old value of b
+            b = c; //b grabs value of c
+            a = temp; //a grabs old value of b
+        }
+    return 0;
 }
