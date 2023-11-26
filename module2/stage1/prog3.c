@@ -1,14 +1,18 @@
 #include <stdio.h>
 
-int main(){
-//   int a;
-//   scanf("%d",&a);
-//   char b[20] = a;
-//   if(a[0] == 3 || a[0] == 5){
-//     printf("odd");
-//   }
-//   return 0;
-// }
+int main() {
+    int number;
+    printf("Enter a positive number: ");
+    scanf("%d", &number);
+    while (number >= 2) {
+        number -= 2;
+    }
+    if (number == 0) {
+        printf("even number.\n");
+    } else {
+        printf("odd number.\n");
+    }
 
+    return 0;
+}
 
-// facing problems
