@@ -2,14 +2,15 @@
 Open-sourced C code base for C assignmentwork, consists of 122 solved problems done in a linux environment through the `gcc` compiler. 
 + Immense thanks to my professor for assigning me this task
 + Please treat this as a writeup for my peers
-+ Code is open for anybody to view and execute. Please open an issue incase some don't work as intended.
++ Code is open for anybody to view,execute or even ![improve](https://github.com/Spirizeon/Assignmentwork/pulls).
+
+Please open an ![issue](https://github.com/Spirizeon/Assignmentwork/issues) incase some don't work as intended.
 
 ## Hierarchy overview
 ```
 assignmentwork on  main [$?⇡] 
 ❯ tree -d
 .
-├── classnotes
 ├── module1
 │   ├── stage1
 │   ├── stage2
