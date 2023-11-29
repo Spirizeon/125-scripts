@@ -1,0 +1,10 @@
+malloc,calloc and realloc
+lie inside alloc.h or stdlib.h
+all are void pointers
+int* ptr = (int *)malloc(sizeof(int));
+int* ptr = (int *)calloc(<cluster-size>,sizeof(int));
+int* ptr = realloc(ptr,sizeof(double));
+
+malloc initialised with garbage values
+calloc initialisaed with 0s values (more secure from seg fault)
+use of free() is must.

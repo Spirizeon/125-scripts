@@ -1,0 +1,17 @@
+heterogenous arrays(kinda): structs
+syntax
+```
+struct student{
+	int age;
+	char name[50];
+	char gender;
+	float CGPA;
+}var1,var2,var3;
+```
+
+`var1` and others are all struct variables
+number of elements in structure is the only limit.
+
+using structure
+`struct student stu2 = (24,"berzy","F",9.8);` 
+
