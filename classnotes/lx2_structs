@@ -1,4 +1,4 @@
-heterogenous arrays(kinda): structs
+Heterogenous arrays(kinda): structs
 syntax
 ```
 struct student{
@@ -15,3 +15,58 @@ number of elements in structure is the only limit.
 using structure
 `struct student stu2 = (24,"berzy","F",9.8);` 
 
+during template creation, no value for member can be initialised
+if you miss something, that value goes 0
+
+acccess
+`printf("%d",s1.age);`
+
+tagname is optional but required for reuse
+```struct{
+	int age;
+	int gender;
+}
+// this code will compiler
+```
+you cannot initialise elements in struct, (it is a template)
+
+array of structures
+---
+struct board b[10];
+an array is formed with each structure as its element, memory allocation partitions array into chunks of struct size memory
+b[10], here 10 is not bytes, 10 is number of partitions.
+
+Arrow operator
+---
+(*ptr).roll
+==
+ptr->roll
+
+Union
+----
+literally same as struct
+allocate memory for largest datatype.
+syntactically same.
+```
+union student{
+	int age;
+	int gender;
+}
+
+int main(){
+	union student var={2,3};
+	return 0;
+}
+	
+```
+
+self-referential structure
+---
+```
+	struct node{
+		int data1;
+		char data2;
+		struct node* link;
+	}
+```
+used in most kinds of datastructures.
